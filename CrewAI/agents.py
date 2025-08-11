@@ -4,10 +4,10 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-#Open ai model and key
+#Open ai model and key for youtube research
 import os
 os.environ["OPENAI_API_KEY"] = os.getenv("OPENAI_API_KEY")
-os.environ["OPENAI_MODEL_NAME"] = "gpt-4o-mini"
+os.environ["OPENAI_MODEL_NAME"] = "GPT-4o-mini"
 
 
 #Create senior blog content researcher
