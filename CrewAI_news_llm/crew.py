@@ -12,4 +12,4 @@ crew = Crew(
 #starting the task execution process with enchanced feedback
 
 result = crew.kickoff(input = {'topic': "AI in healthcare"})
-print(result)
+print(result) 
