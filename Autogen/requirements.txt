@@ -1,2 +1,4 @@
 autogen
 autogen-agentchat
+autogen-ext[azure]
+pandas
