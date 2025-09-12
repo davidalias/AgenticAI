@@ -2,3 +2,4 @@ autogen
 autogen-agentchat
 autogen-ext[azure]
 pandas
+ag2[openai]
