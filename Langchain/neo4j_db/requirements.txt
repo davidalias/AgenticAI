@@ -5,3 +5,4 @@ langchain-groq
 requests==2.32.4
 tenacity==8.5.0 
 fsspec==2025.3.0
+gradio
