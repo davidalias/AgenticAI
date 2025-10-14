@@ -21,9 +21,8 @@ Whenever it is needed to work with external knowledge db or any data that needs 
 
 Once data is recieved, it is important to convert it into a structure where additional strategies like chunking and embedding be applied, before storing it into a vector db.
 
-In Data Ingestion Pipeline, after data parsing to a document structure, the next step is chumking. In chunking, the entire data is converted into multiple chunks, and then embedding is applied to it.
+In Data Ingestion Pipeline, after data parsing to a document structure, the next step is chunking. In chunking, the entire data is converted into multiple chunks, and then embedding is applied to it.
 
 In embedding, there is a fixed context size. If more data is passed than the context size, it may not be possible to convert text into a vector. Hence, data should be passed within the limit of a context size, and it is a good strategy to divide data into chunks.
 
 After chunking, embedding will be applied to every chunk, and records will be stored in a vector db as vectors, which in turn can be used for similarity search.
-
