@@ -19,7 +19,7 @@ RAG pipeline -> Data ingestion pipeline + Query Retrieval pipeline
 
 Whenever it is needed to work with external knowledge db or any data that needs to be fed into the vector db, it is important to know about 'document' structure.
 
-Once data is recieved, it is important to convert it into a structure where additional strategies like chunking and embedding be applied, before storing it into a vector db.
+Once data is received, it is important to convert it into a structure where additional strategies like chunking and embedding be applied, before storing it into a vector db.
 
 In Data Ingestion Pipeline, after data parsing to a document structure, the next step is chunking. In chunking, the entire data is converted into multiple chunks, and then embedding is applied to it.
 
