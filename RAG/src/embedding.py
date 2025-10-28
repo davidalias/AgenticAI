@@ -11,7 +11,7 @@ class EmbeddingPipeline:
         self.model = SentenceTransformer(model_name)
         print(f"[INFO] Loaded embedding model: {model_name}")
 
-    #chunking of the documents
+    #convert documents to chunks
     def chunk_documents(self, documents: List[Any]) -> List[Any]:
         splitter = RecursiveCharacterTextSplitter(
             chunk_size =  self.chunk_size,
@@ -23,7 +23,7 @@ class EmbeddingPipeline:
         print(f"[INFO] Split {len(documents)} documents into {len(chunks)} chunks.")
         return chunks
     
-    #embedding of the chunks
+    #convert chunks to embeddings
     def embed_chunks(self, chunks: List[Any]) -> np.ndarray:
         texts = [chunk.page_content for chunk in chunks]
         print(f"[INFO] Generating embeddings for {len(texts)} chunks...")
