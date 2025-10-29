@@ -26,3 +26,6 @@ In Data Ingestion Pipeline, after data parsing to a document structure, the next
 In embedding, there is a fixed context size. If more data is passed than the context size, it may not be possible to convert text into a vector. Hence, data should be passed within the limit of a context size, and it is a good strategy to divide data into chunks.
 
 After chunking, embedding will be applied to every chunk, and records will be stored in a vector db as vectors, which in turn can be used for similarity search.
+
+
+#A FAISS index is a data structure used for fast similarity search on high-dimensional vectors, like those generated from text, images, or other data using machine learning models. faiss.IndexFlatL2(dim) #This index uses L2 (Euclidean) distance for similarity search.IndexFlatL2 is simple and fast but doesn't scale well for huge datasets.
