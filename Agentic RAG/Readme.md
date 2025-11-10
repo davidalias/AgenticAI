@@ -5,3 +5,10 @@ Agentic RAG is a framework that enhances traditional RAG systems by incorporatin
 Use an agent to figure out how to retieve the most relevant information before using the retrieved information to answer the user's question.
 
 Retrieval Agents are useful when we want to make decisions about whether to retrieve from an index. To implement a retrieval agent, we simply need to give an LLM access to retriever tool.
+
+RAG Paradigm: Naive Rag, Advanced Rag, modular Rag, Graph Rag
+
+naive rag -> Rely on keyword based retrieval technique (tf-idf, bm25) to fetch docs from static datasets. But it has lack of contextual awareness, fragmented outputs and scalability issues.
+
+Advanced Rag -> Incorporate semantic understandings and enhanced retrieval technques. Dense Passage Retrieval (DPR) & neural ranking algorithms to improve retrieval precision. top-k similar docs are fetched based on vector space position.
+
