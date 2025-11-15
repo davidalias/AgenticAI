@@ -24,3 +24,6 @@ Agentic RAG -> Introduces autonomous agents capable of dynamic decision-making a
 Autonomous decision-making (Agents independently evaluate and manage retrieval strategies)
 Iterative Refinement (Incorporate feedback loops to improve retrieval accuracy and response relevance)
 Workflow optimization(dynamically orchestrates tasks, enabling efficiency in real-time applications)
+
+
+SINGLE AGENT AGENTIC RAG -> A centralized decisionmaking system where a single agent manages the retrieval, routing, and integration of information. This architecture simplifies the system by consolidating these tasks into one unified agent, making it particularly effective for setups with a limited number of tools or data sources. Based on the query type, the agent chooses from a variety of retrieval options
