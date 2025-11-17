@@ -27,3 +27,10 @@ Workflow optimization(dynamically orchestrates tasks, enabling efficiency in rea
 
 
 SINGLE AGENT AGENTIC RAG -> A centralized decisionmaking system where a single agent manages the retrieval, routing, and integration of information. This architecture simplifies the system by consolidating these tasks into one unified agent, making it particularly effective for setups with a limited number of tools or data sources. Based on the query type, the agent chooses from a variety of retrieval options
+
+
+MULTI-AGENT AGENTIC RAG -> Instead of relying on a single agent to manage all tasks-reasoning, retrieval, and response generation- this system distributes responsibilities across multiple agents, each optimized for a specific role or data source. Query Submission -> specilized retrieval agents (query is distributed among multiple retrieval agents, each focusing on a specific type of data source or task) -> total access and data retrieval -> tool access and data retrieval -> data integration and llm synthesis -> output generation
+Manager agent (retrieval router agent) decides on which retrieval agents to call
+
+
+HIERARCHICAL AGENTIC RAG -> Agents are organized in a hierarchy, with higher-level agents overseeing and directing lower-level agents. This structure enables multi-level decision-making, ensuring that queries are handled by the most appropriate resources.
