@@ -1,3 +1,4 @@
 autogen
 autogen-agentchat
 autogen-ext[openai]
+langchain-community
