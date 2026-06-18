@@ -42,10 +42,13 @@ question = "What is CNN?"
 
 #RAG Retrieval
 
-RAG_result = retriever.invoke(question)
+def rag_retrieve(query:str):
+    RAG_result = retriever.invoke(question)
 
-print(len(RAG_result))
+    #print(len(RAG_result))
 
-for i, res in enumerate(RAG_result):
-    print("Result:",i+1)
-    print(res.page_content)
+    #for i, res in enumerate(RAG_result):
+        #print("Result:",i+1)
+        #print(res.page_content)
+        
+    return RAG_result
