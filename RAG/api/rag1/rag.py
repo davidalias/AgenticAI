@@ -37,13 +37,13 @@ vector_store =FAISS.from_documents(documents=list_of_docs, embedding=embeddings)
 
 #Retriever
 
-retriever = vector_store.as_retriever()
+retriever = vector_store.as_retriever(search_kwags = {"k":2, "score_threshold": 0.5})
 question = "What is CNN?"
 
 #RAG Retrieval
 
 def rag_retrieve(query:str):
-    RAG_result = retriever.invoke(question)
+    RAG_result = retriever.invoke(query)
 
     #print(len(RAG_result))
 
